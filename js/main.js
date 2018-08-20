@@ -1,10 +1,10 @@
 jQuery(function($) {
-	
+
 	//Initiat WOW JS
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
-	
+
 	// Progress Bar
 	$('#about-us').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
@@ -31,5 +31,5 @@ jQuery(function($) {
 			$(this).unbind('inview');
 		}
 	});
-	
+
 });
