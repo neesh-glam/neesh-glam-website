@@ -1,6 +1,8 @@
 // Function to display images
 jQuery(document).ready(function($) {
-
+  window.addEventListener("load", function(event) {
+    readAllFiles('fantasy');
+    });
   $('#fantasy').on('click', function() {
     readAllFiles('fantasy');
   });
@@ -27,13 +29,14 @@ jQuery(document).ready(function($) {
     "photography": 13,
     "special-effects": 13,
     "beauty": 19
-  }
+  };
   var path = 'images/';
 
   function readAllFiles(name) {
     var folderlength = lengthObject[name];
     var initialPath = path + name;
     var uppercase = name.toUpperCase();
+    $('#' + name + ' .gallery-grids').html("");
     for (let i = 1; i <= folderlength; i++) {
       var imgPath = initialPath + '/' + name + "-" + i + ".jpg"
 
@@ -54,4 +57,5 @@ jQuery(document).ready(function($) {
     }
 
   }
+
 });
