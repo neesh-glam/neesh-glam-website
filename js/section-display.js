@@ -21,10 +21,10 @@ jQuery(document).ready(function($) {
   });
   var lengthObject = {
     "beauty": 19,
-    "bridal": 28,
+    "bridal": 31,
     "events": 9,
-    "fantasy": 15,
-    "photography": 10,
+    "fantasy": 16,
+    "photography": 13,
     "special-effects": 13,
     "beauty": 19
   }
