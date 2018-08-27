@@ -14,7 +14,7 @@ L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var myURL = jQuery( 'script[src$="leaf.js"]' ).attr( 'src' ).replace( 'leaf.js', '' )
 
 var myIcon = L.icon({
-  iconUrl: myURL + '../images/misc/pin24.jpg',
+  iconUrl: myURL + '../images/misc/pin24.png',
   iconRetinaUrl: myURL + '../images/misc/pin24.png',
   iconSize: [29, 24],
   iconAnchor: [9, 21],
