@@ -1,8 +1,8 @@
 // Function to display images
 jQuery(document).ready(function($) {
   window.addEventListener("load", function(event) {
-    readAllFiles('fantasy');
-    });
+    readAllFiles('bridal');
+  });
   $('#fantasy').on('click', function() {
     readAllFiles('fantasy');
   });
@@ -27,8 +27,7 @@ jQuery(document).ready(function($) {
     "events": 9,
     "fantasy": 16,
     "photography": 13,
-    "special-effects": 13,
-    "beauty": 19
+    "special-effects": 13
   };
   var path = 'images/';
 
